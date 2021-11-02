@@ -1,0 +1,5 @@
+UPDATE vozidla SET max_rychlost = 320 WHERE  max_rychlost >= 350;
+
+DELETE FROM vozidla WHERE(hodnoceni <= "30") AND (nazev = "Moped")
+
+INSERT INTO meny(nazev,zkratka,kurz_vuci_USD) VALUES("Bitcoin","BTC","0.00008")
