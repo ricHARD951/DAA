@@ -1,0 +1,27 @@
+#1
+SELECT *  FROM uzivatele WHERE prezdivka = "Denny";
+
+#2
+SELECT * FROM uzivatele WHERE uzivatele_id >=2 AND uzivatele_id<=4;
+
+#3
+SELECT * FROM uzivatele WHERE prezdivka LIKE "%a" OR prezdivka LIKE "e__";
+
+#2....................................................................................
+
+#1
+SELECT nazev, start FROM turnaje WHERE nazev LIKE "Grand Prix %";
+
+#2
+SELECT * FROM vozidla WHERE nazev IN ("Sáně","Moped","Pickup");
+
+#3
+SELECT prezdivka, uroven, utrata FROM uzivatele WHERE prezdivka IN ("RashFlow5","WifeAndSite","LunchAndBlood","FastGamerAccess") AND uroven BETWEEN 15 AND 55 AND utrata >=0 
+
+#3....................................................
+
+#1
+SELECT first_name, last_name, email FROM  person_detail WHERE first_name = "Emilie" AND last_name ="Mikešová";
+
+#2
+SELECT user_id, name FROM user WHERE NAME LIKE "k%" AND user_id BETWEEN 250 AND 700;
