@@ -1,0 +1,23 @@
+#1
+SELECT prezdivka, email FROM uzivatele ORDER BY prezdivka 
+
+#2
+SELECT  uzivatel_id, COUNT (komentare_id) AS    "pocet clankov" FROM komentare GROUP BY uzivatel_id
+
+#3
+SELECT AVG(zrychleni) FROM vozidla
+
+#4
+SELECT MAX(zlataky)  AS"max_zlataku", MIN(zlataky) AS"min_zlataku", MAX(penize) AS"max_penez", MIN(penize) AS"min_penez" FROM vyhry;
+
+#5
+SELECT obchod_id, vozidlo_id, sleva_min, aktualni_sleva, dostupne FROM obchody ORDER BY aktualni_sleva DESC
+
+#6
+SELECT    COUNT(title) AS"pocet_zlutych_produktu"FROM    item    WHERE title LIKE    "%yellow" OR title LIKE    "%žlutá"
+
+#7
+SELECT invoice_id, COUNT() FROM    item_invoice GROUP BY invoice_id;
+
+#8
+SELECT COUNT() AS"pocet_zakaznikov",bank_code FROM bank_account GROUP BY bank_code ORDER BY    pocet_zakaznikov DESC;
