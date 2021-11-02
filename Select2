@@ -1,10 +1,10 @@
-#1
+#1 zoraďovanie ASC/DESC
 SELECT prezdivka, email FROM uzivatele ORDER BY prezdivka 
 
-#2
+#2 Spočítanie - COUNT, premenovanie - AS, zoskupenie pomocou určitých kriterii - GROUP BY
 SELECT  uzivatel_id, COUNT (komentare_id) AS    "pocet clankov" FROM komentare GROUP BY uzivatel_id
 
-#3
+#3 Priemer
 SELECT AVG(zrychleni) FROM vozidla
 
 #4
